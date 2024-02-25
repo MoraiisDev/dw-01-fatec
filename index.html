@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="./assets/style.css"> //css feito localmente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <title>DW-01</title>
+</head>
+<body>
+  <!-- Criar uma página HTML5 contendo o nome do curso, período, semestre e nome dos componentes do grupo. 
+  Inserir também uma foto de cada integrante ou avatar.  -->
+  <header>
+    <h1>fatec zona sul - dom paulo evaristo arns</h1>
+    <h2>desenvolvimento de software multiplataforma</h2>
+    <h3>1° Semestre - Vespertino</h3>
+  </header>
+  <main>
+    <article class="container-integrantes">
+      <ul class="integrantes">
+        <li>
+          <p>Integrante 1</p>
+          <div class="zoom-wraper">
+            <img src="https://source.unsplash.com/540x540/?manface" alt="">
+          </div>
+        </li>
+        <li>
+          <p>Integrante 2</p>
+          <div class="zoom-wraper">
+            <img src="https://source.unsplash.com/540x540/?women" alt="">
+          </div>
+        </li>
+        <li>
+          <p>Integrante 3</p>
+          <div class="zoom-wraper">
+            <img src="https://source.unsplash.com/540x540/?face" alt="">
+          </div>
+        </li>
+      </ul>
+    </article>
+  </main>
+</body>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --black: #000;
+    --white: #fff;
+    --cinza: #d3d3d3;
+    --sw-6312: #ad5e65;
+    --sw-6179: #7f8266; 
+  }
+
+  body {
+    font-family: "Open Sans", sans-serif;
+    background: var(--cinza);
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+
+  h1 {
+    margin: 10px 0px 0px 0px;
+  }
+
+  h1,h2,h3 {
+    color: var(--sw-6312);
+    font-weight: bold;
+    text-transform: uppercase
+  }
+
+  /* .container-integrantes {
+    display: flex;
+    justify-content: center;
+  } */
+
+  .zoom-wraper {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .zoom-wraper img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s;
+  }
+
+  .zoom-wraper:hover img {
+    transform: scale(1.1);
+  }
+
+  .integrantes {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    color: var(--black);
+    list-style: none;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  li p {
+    color: var(--black);
+    margin: 10px 0px;
+  }
+</style>
+</html>
