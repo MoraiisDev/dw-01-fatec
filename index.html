@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-  <meta charset="utf-8">
+  <!-- <meta charset="utf-8"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="./assets/style.css"> //css feito localmente -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,21 +21,21 @@
     <article class="container-integrantes">
       <ul class="integrantes">
         <li>
-          <p>Integrante 1</p>
-          <div class="zoom-wraper">
-            <img src="https://source.unsplash.com/540x540/?manface" alt="">
-          </div>
-        </li>
-        <li>
-          <p>Integrante 2</p>
+          <p>Emanuelly Araujo</p>
           <div class="zoom-wraper">
             <img src="https://source.unsplash.com/540x540/?women" alt="">
           </div>
         </li>
         <li>
-          <p>Integrante 3</p>
+          <p>Cauã Duarte</p>
           <div class="zoom-wraper">
-            <img src="https://source.unsplash.com/540x540/?face" alt="">
+            <img src="https://source.unsplash.com/540x540/?manface" alt="">
+          </div>
+        </li>
+        <li>
+          <p>João Vitor M.</p>
+          <div class="zoom-wraper">
+            <img src="https://source.unsplash.com/540x540/?man" alt="">
           </div>
         </li>
       </ul>
@@ -53,20 +53,22 @@
   :root {
     --black: #000;
     --white: #fff;
-    --cinza: #d3d3d3;
+    --grey: #d3d3d3;
+    --dark-grey: #474a51;
     --sw-6312: #ad5e65;
-    --sw-6179: #7f8266; 
+    --sw-6179: #7f8266;
   }
 
   body {
     font-family: "Open Sans", sans-serif;
-    background: var(--cinza);
+    background: var(--grey);
   }
 
   header {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
+    padding: 0px 0px 55px 0px;
   }
 
   h1 {
@@ -118,5 +120,19 @@
     color: var(--black);
     margin: 10px 0px;
   }
+
+  /* For Tablet View */
+@media screen and (min-device-width: 480px) 
+    and (max-device-width: 768px) {
+    h1 {
+        text-align: center;
+        margin: 0px 0px 10px 0px;
+        /* padding: 0px 0px 0px 100px; */
+    }
+    h2 {
+        margin: 0px 0px 10px 0px;
+        text-align: center;        
+    }
+}
 </style>
 </html>
